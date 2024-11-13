@@ -12,6 +12,7 @@ import Insider from "./Flipkart/Insider.jsx";
 import Header_sm from "./Flipkart/Header_sm.jsx";
 import AutoPlaySlider from "./Flipkart/Slider.jsx";
 import Insider1 from "./component/Insider1.jsx";
+
 import Bottom from "./Flipkart/bottom/index.jsx";
 import Form1 from "./Form1.jsx";
 import Form3 from "./Form3.jsx";

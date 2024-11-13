@@ -1,11 +1,8 @@
 import React from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import FavoriteIcon from "@mui/icons-material/Favorite";
 const Header_sm = () => {
   return (
     <div>
-      {" "}
       <div className="flex border h-10 gap-x-0 justify-evenly items-center shadow-lg ">
         <div className="flex gap-1 items-center text-sm font-semibold">
           Electronics
