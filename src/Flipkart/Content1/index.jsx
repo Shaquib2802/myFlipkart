@@ -107,7 +107,7 @@ const Content1 = () => {
             />
           </div>
           <div className="font-semibold ml-3 mt-2 text-sm ">
-            npm run Mobiles and Tablets
+            Mobiles and Tablets
           </div>
         </div>
         <div className="flex-col w-24   ml-7 ">

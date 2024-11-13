@@ -7,13 +7,95 @@ import { CiMenuKebab } from "react-icons/ci";
 import MenuTwoToneIcon from "@mui/icons-material/MenuTwoTone";
 import { IoSearchOutline } from "react-icons/io5";
 import SystemUpdateIcon from "@mui/icons-material/SystemUpdate";
+import Box from "@mui/material/Box";
+import OfflineBoltRoundedIcon from '@mui/icons-material/OfflineBoltRounded';
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import PersonIcon from '@mui/icons-material/Person';
+import List from "@mui/material/List";
+import Divider from "@mui/material/Divider";
+import { IoLanguage } from "react-icons/io5";
+
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import InboxIcon from "@mui/icons-material/MoveToInbox";
+import MailIcon from "@mui/icons-material/Mail";
 
 const NewHeader = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+  const DrawerList = (
+    <Box className="w-[250px] " role="presentation" onClick={toggleDrawer(false)}>
+      <List className="bg-blue-600 ">
+        {["Login & Signup"].map((text, index) => (
+          <ListItem className="text-white" key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <PersonIcon className="text-white"/> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        {["SuperCoin Zone ", "Flipkart Plus Zone"].map((text, index) => (
+          <ListItem  key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <OfflineBoltRoundedIcon/> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider/>
+      <List>
+        {["All Categories", "More on Flipkart"].map((text, index) => (
+          <ListItem  key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <OfflineBoltRoundedIcon/> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider/>
+      <List>
+        {["Choose Language"].map((text, index) => (
+          <ListItem  key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                {index % 2 === 0 ? <IoLanguage/> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider/>
+    </Box>
+  );
+
   return (
     <div className="flex h-20 border items-center space-x-5 md:space-x-6 lg:space-x-8 xl:space-x-12 ">
-      <div className="md:hidden flex pl-2 ">
+      <div onClick={toggleDrawer(true)} className="md:hidden flex pl-2  ">
         <MenuTwoToneIcon />
       </div>
+      
+        <Drawer open={open} onClose={toggleDrawer(false)}>
+          {DrawerList}
+        </Drawer>
+      
       <div className="">
         <img
           src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_plus-055f80.svg"
@@ -41,7 +123,7 @@ const NewHeader = () => {
         </div>
       </div>
       <div className="flex items-center gap-x-2">
-        <BsCart3 className="md: text-xl"/>
+        <BsCart3 className="md: text-xl" />
 
         <span className=" xl:flex hidden">Cart</span>
       </div>
