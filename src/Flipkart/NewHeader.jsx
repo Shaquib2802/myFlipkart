@@ -9,10 +9,10 @@ import MenuTwoToneIcon from "@mui/icons-material/MenuTwoTone";
 import { IoSearchOutline } from "react-icons/io5";
 import SystemUpdateIcon from "@mui/icons-material/SystemUpdate";
 import Box from "@mui/material/Box";
-import OfflineBoltRoundedIcon from '@mui/icons-material/OfflineBoltRounded';
+import OfflineBoltRoundedIcon from "@mui/icons-material/OfflineBoltRounded";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import PersonIcon from '@mui/icons-material/Person';
+import PersonIcon from "@mui/icons-material/Person";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import { IoLanguage } from "react-icons/io5";
@@ -31,13 +31,21 @@ const NewHeader = () => {
     setOpen(newOpen);
   };
   const DrawerList = (
-    <Box className="w-[250px] " role="presentation" onClick={toggleDrawer(false)}>
+    <Box
+      className="w-[250px] "
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
       <List className="bg-blue-600 ">
         {["Login & Signup"].map((text, index) => (
           <ListItem className="text-white" key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <PersonIcon className="text-white"/> : <MailIcon />}
+                {index % 2 === 0 ? (
+                  <PersonIcon className="text-white" />
+                ) : (
+                  <MailIcon />
+                )}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
@@ -47,43 +55,43 @@ const NewHeader = () => {
       <Divider />
       <List>
         {["SuperCoin Zone ", "Flipkart Plus Zone"].map((text, index) => (
-          <ListItem  key={text} disablePadding>
+          <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <OfflineBoltRoundedIcon/> : <MailIcon />}
+                {index % 2 === 0 ? <OfflineBoltRoundedIcon /> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
-      <Divider/>
+      <Divider />
       <List>
         {["All Categories", "More on Flipkart"].map((text, index) => (
-          <ListItem  key={text} disablePadding>
+          <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <OfflineBoltRoundedIcon/> : <MailIcon />}
+                {index % 2 === 0 ? <OfflineBoltRoundedIcon /> : <MailIcon />}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText className="!text-sm" primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
-      <Divider/>
+      <Divider />
       <List>
         {["Choose Language"].map((text, index) => (
-          <ListItem  key={text} disablePadding>
+          <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <IoLanguage/> : <MailIcon />}
+                {index % 2 === 0 ? <IoLanguage /> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
-      <Divider/>
+      <Divider />
     </Box>
   );
 
@@ -92,11 +100,11 @@ const NewHeader = () => {
       <div onClick={toggleDrawer(true)} className="md:hidden flex pl-2  ">
         <MenuTwoToneIcon />
       </div>
-      
-        <Drawer open={open} onClose={toggleDrawer(false)}>
-          {DrawerList}
-        </Drawer>
-      
+
+      <Drawer open={open} onClose={toggleDrawer(false)}>
+        {DrawerList}
+      </Drawer>
+
       <div className="">
         <img
           src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_plus-055f80.svg"
