@@ -20,6 +20,7 @@ import NewHeader from "./Flipkart/NewHeader.jsx";
 import MapSLider from "./Flipkart/MapSLider.jsx";
 import Details from "./Flipkart/Home/Details.jsx";
 import { ClassNames } from "@emotion/react";
+import Post from "./Flipkart/Post.jsx";
 function App() {
   return (
     <>
@@ -28,13 +29,20 @@ function App() {
           <Route path="/" element={<Flipkart />} />
           <Route path="/nested" element={<Nested />} />
           <Route path="/below" element={<Below />} />
-          <Route path="/elect" element={<Signup />} /> 
-          {/* <Route path="/appliances" element={<Appliances />} />
-          {/* <Route path="/" element={<MapSLider />} />
-          <Route path="/detail/:id" element={<Details />} /> */}
+          <Route path="/elect" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </>
+   /*    <div><Post/> </div> */
+    /* <Route path="/appliances" element={<Appliances />} /> */
+    /*  <>
+      <BrowserRouter>
+        <Routes> */
+    /* <Route path="/" element={<MapSLider />} />
+          <Route path="/detail/:id" element={<Details />} /> */
+    /*   </Routes>
+      </BrowserRouter>
+    </> */
 
     /* /* <AutoPlaySlider/> */
 

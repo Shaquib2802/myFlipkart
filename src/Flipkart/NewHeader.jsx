@@ -1,5 +1,4 @@
 import React from "react";
-
 import { RiAccountCircleLine } from "react-icons/ri";
 import KeyboardArrowDownTwoToneIcon from "@mui/icons-material/KeyboardArrowDownTwoTone";
 import { BsCart3 } from "react-icons/bs";
@@ -120,8 +119,13 @@ const NewHeader = () => {
         />
         <IoSearchOutline className="absolute text-2xl ml-1 text-gray-600" />
       </div>
-      <div className="md:hidden pl-14 flex  ">
-        <SystemUpdateIcon />
+      <div className="md:flex hidden w-[49%] items-center border-none ">
+        <input
+          type="text"
+          placeholder="Search for Products Brand and More "
+          className="w-full   py-1 pl-10 h-10 rounded-md bg-gray-100 placeholder:text-base font-semibold text-gray-500"
+        />
+        <IoSearchOutline className="absolute text-2xl ml-1 text-gray-600" />
       </div>
       <div className="flex items-center gap-x-2">
         <RiAccountCircleLine className="xl:text-2xl md: text-2xl " />

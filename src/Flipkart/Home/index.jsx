@@ -4,12 +4,14 @@ import Bottom from "../Bottom/index.jsx";
 import Header1 from "../Header1/index.jsx";
 import Content1 from "../content1/index.jsx";
 import NewHeader from "../NewHeader.jsx";
+import HeaderUP from "../../component/HeaderUP.jsx";
 
 export const Flipkart= () => {
   return (
     <div className="bg-gray-50">
       {/* <Header1/> */}
-      <NewHeader/>
+      <HeaderUP/>
+      {/* <NewHeader/> */}
       <Content1/>
       <Bottom/>
     </div>

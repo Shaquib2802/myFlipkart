@@ -41,7 +41,7 @@ const Form4 = () => {
         </div>
         <input
           name="name"
-          id="name"
+    
           type="text"
           placeholder="Name"
           onChange={handleChange}

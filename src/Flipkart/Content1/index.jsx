@@ -40,11 +40,11 @@ const Content1 = () => {
 
   var settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 10,
     slidesToScroll: 4,
-    initialSlide: 0,
+    initialSlide: 2,
     responsive: [
       {
         breakpoint: 1024,
@@ -70,7 +70,6 @@ const Content1 = () => {
         },
       },
     ],
-    
   };
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -202,8 +201,6 @@ const Content1 = () => {
         </div>
       </Slider>
 
- 
-   
       <div className="h-[20%] border mt-4 mx-3 relative">
         <div>
           <AutoPlaySlider />
@@ -447,7 +444,7 @@ const Content1 = () => {
           />
         </div>
       </div>
-      <MapSLider/>
+      <MapSLider />
       <div className=" ml-3 overflow-hidden block xl:hidden lg:hidden md:hidden border bg-white mt-3 ">
         <div className="flex mt-3 justify-between w-[100%]">
           <div className="font-semibold text-xl ml-2 mt-1 ">

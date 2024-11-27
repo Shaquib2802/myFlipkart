@@ -47,7 +47,7 @@ const MapSLider = () => {
 
   var settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 5,
@@ -84,7 +84,9 @@ const MapSLider = () => {
 
   return (
     <div className="border m-3">
-      <div className="text-2xl ml-4 font-semibold mt-5 ">Beauty & Cosmetics</div>
+      <div className="text-2xl ml-4 font-semibold mt-5 ">
+        Beauty & Cosmetics
+      </div>
       <div className="     mt-5  ">
         <div className="slider-container ">
           <Slider {...settings}>
@@ -96,7 +98,6 @@ const MapSLider = () => {
                 <img
                   onClick={() => navigate(`/detail/${item.id}`)}
                   src={item.images}
-                 
                   className="h-48 w-48  mx-auto  border rounded-lg  "
                 />
                 <h1 className="mx-auto whitespace-nowrap truncate w-40 ">
@@ -105,8 +106,6 @@ const MapSLider = () => {
               </div>
             ))}
           </Slider>
-
-          
         </div>
       </div>
     </div>
