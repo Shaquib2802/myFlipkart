@@ -13,7 +13,7 @@ const Flip = () => {
               Get access to your Orders,
             </div>
             <div className="mt- ml-6 text-xl text-gray-300">
-              Wishlist and Recommendations
+              Wishlist and Recommendations.
             </div>
             <div className="mt-48 ml-1.5 shadow-2xl w-[25vw] border border-blue-600 ">
               <img

@@ -12,11 +12,7 @@ import Insider from "./Flipkart/Insider.jsx";
 import Header_sm from "./Flipkart/Header_sm.jsx";
 import AutoPlaySlider from "./Flipkart/Slider.jsx";
 import Insider1 from "./component/Insider1.jsx";
-
-<<<<<<< HEAD
-=======
 import Bottom from "./Flipkart/Bottom/index.jsx";
->>>>>>> a2ad9d3112c52137d2af45413a57b109b2ff1a45
 import Form1 from "./Form1.jsx";
 import Form3 from "./Form3.jsx";
 import Form4 from "./form4.jsx";
@@ -25,19 +21,24 @@ import MapSLider from "./Flipkart/MapSLider.jsx";
 import Details from "./Flipkart/Home/Details.jsx";
 import { ClassNames } from "@emotion/react";
 import Post from "./Flipkart/Post.jsx";
+import APForm from "./Flipkart/API Task/APForm.jsx";
+import Flip from "./loginFlip/form.jsx";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Flipkart />} />
+          <Route path="/" element={<MapSLider />} />
+          <Route path="/form" element={<APForm />}/>
           <Route path="/nested" element={<Nested />} />
           <Route path="/below" element={<Below />} />
           <Route path="/elect" element={<Signup />} />
+          <Route path="/detail/:id/:slug" element={<Details />} />
         </Routes>
       </BrowserRouter>
     </>
-   /*    <div><Post/> </div> */
+    /*    <div><Post/> </div> */
     /* <Route path="/appliances" element={<Appliances />} /> */
     /*  <>
       <BrowserRouter>
@@ -47,7 +48,8 @@ function App() {
     /*   </Routes>
       </BrowserRouter>
     </> */
-
+/*     <div><Signup/></div>
+ */
     /* /* <AutoPlaySlider/> */
 
     /* <Below/> */

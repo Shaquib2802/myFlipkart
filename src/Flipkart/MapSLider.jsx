@@ -81,7 +81,7 @@ const MapSLider = () => {
       },
     ],
   };
-
+  const a = 19;
   return (
     <div className="border m-3">
       <div className="text-2xl ml-4 font-semibold mt-5 ">
@@ -96,7 +96,10 @@ const MapSLider = () => {
                 className="flex flex-col  items-center    rounded-md   h-56    "
               >
                 <img
-                  onClick={() => navigate(`/detail/${item.id}`)}
+                  onClick={() =>
+                    navigate(`/detail/${item.id}/${item?.title}`,{
+                    state:item?.title,})
+                  }
                   src={item.images}
                   className="h-48 w-48  mx-auto  border rounded-lg  "
                 />
