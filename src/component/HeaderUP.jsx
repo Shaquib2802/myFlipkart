@@ -214,7 +214,7 @@ const HeaderUP = () => {
                   {" "}
                   Keep me signed in
                 </div>
-                <div className="text-blue-600 text-sm ml-20 md:ml-32 mt-2  font-semibold">
+                <div className="text-blue-600 text-sm ml-12 md:ml-32 mt-2  font-semibold">
                   {" "}
                   Forgot Password
                 </div>
@@ -222,7 +222,7 @@ const HeaderUP = () => {
               <div className="flex mt-2 md:mt-8">
                 <div className="border ml-12 w-56 text-center text-white bg-orange-600 h-10 rounded-lg text-sm font-bold ">
                   {" "}
-                  <div className="mt-2">Login</div>
+                  <div className="mt-2 ">Login</div>
                 </div>
                 <div className="text-gray-500 text-sm font-semibold ml-5 mt-2 hidden md:block">
                   Or
