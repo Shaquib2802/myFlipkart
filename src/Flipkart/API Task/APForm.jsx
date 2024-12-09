@@ -1,5 +1,5 @@
 import { useFormik } from "formik";
-import moment from "moment";
+
 import React from "react";
 
 const APForm = () => {
@@ -87,7 +87,7 @@ const APForm = () => {
           </button>
         </div>
       </div>
-      <div>{moment(formik.values?.date).format("  ")}</div>
+      {/* <div>{moment(formik.values?.date).format("  ")}</div> */}
     </form>
   );
 };
