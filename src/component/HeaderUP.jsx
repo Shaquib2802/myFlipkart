@@ -170,9 +170,9 @@ const HeaderUP = () => {
       >
         <Box
           sx={style}
-          className="!w-[70%] h-[90%] md:h-fit mx-[25%] mt-1 md:mt-10 lg:mt-2 border-none outline-none "
+          className="!w-[70%]  md:h-fit mx-[25%] mt-1 md:mt-10 lg:mt-2 rounded-md border-none outline-none "
         >
-          <form className=" w-[100%]   grid grid-cols-1 lg:grid-cols-2 border  mb-2 ">
+          <form className=" w-[100%]   grid grid-cols-1 lg:grid-cols-2 border   mb-2 ">
             <div className=" bg-white flex flex-col  ">
               <div className="ml-12 w-[50%] md:w-[30%] lg:w-[40%]   h-16    overflow-hidden">
                 <img
