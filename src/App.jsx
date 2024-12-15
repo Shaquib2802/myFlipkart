@@ -23,20 +23,27 @@ import { ClassNames } from "@emotion/react";
 import Post from "./Flipkart/Post.jsx";
 import APForm from "./Flipkart/API Task/APForm.jsx";
 import Flip from "./loginFlip/form.jsx";
+import Rest from "../Rest.jsx";
+import Aform from "../Aform.jsx";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Flipkart />} />
-          <Route path="/" element={<MapSLider />} />
-          <Route path="/form" element={<APForm />}/>
-          <Route path="/nested" element={<Nested />} />
+          {/* <Route path="/" element={<Flipkart />} />
+          <Route path="/" element={<MapSLider />} /> */}
+          {/* <Route path="/form" element={<APForm />}/> */}
+          {/* <Route path="/nested" element={<Nested />} />
           <Route path="/below" element={<Below />} />
           <Route path="/elect" element={<Signup />} />
-          <Route path="/detail/:id/:slug" element={<Details />} />
+          <Route path="/detail/:id/:slug" element={<Details />} /> */}
+          <Route path="/" element={<Rest/>} />
+          <Route path="/try1" element={<Aform />} />
+          {/* <Route path="/try/:id" element={<APForm />} /> */}
         </Routes>
+        
       </BrowserRouter>
+      
     </>
     /*    <div><Post/> </div> */
     /* <Route path="/appliances" element={<Appliances />} /> */
@@ -48,8 +55,8 @@ function App() {
     /*   </Routes>
       </BrowserRouter>
     </> */
-/*     <div><Signup/></div>
- */
+    /*     <div><Signup/></div>
+     */
     /* /* <AutoPlaySlider/> */
 
     /* <Below/> */

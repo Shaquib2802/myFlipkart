@@ -97,8 +97,7 @@ const MapSLider = () => {
               >
                 <img
                   onClick={() =>
-                    navigate(`/detail/${item.id}/${item?.title}`,{
-                    state:item?.title,})
+                    navigate(`/detail/${item.id}/${item?.title}`)
                   }
                   src={item.images}
                   className="h-48 w-48  mx-auto  border rounded-lg  "
